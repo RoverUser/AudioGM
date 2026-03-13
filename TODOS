@@ -1,0 +1,10 @@
+Long term ideas:
+	Add OGG/MP3 support.
+	Maybe add support for multiple channel output?
+	Fix all TODO’s in the code.
+	Fix the stop function, locks up on audio’s that are looped.
+“Maybe if I will care” ideas:
+	Add ARM64 support (does GameMaker even support ARM64 builds?).
+	Rewrite build system to use MingW64.
+	Get rid of Visual C++ runtime dependency (tricky to do using VS 2010, but possible. Impossible on newer versions of VS).
+
