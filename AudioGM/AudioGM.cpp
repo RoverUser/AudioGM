@@ -530,12 +530,6 @@ unsigned int WINAPI BackgroundAudioThread(void* lpThreadParam) {
 #ifdef ENABLE_TEST
 AUDIOGM_API void AUDIOGM_CALLCONV TestAPI(HWND hwndStub, HINSTANCE hInstance, LPTSTR pszCmdLine, int nCmdShow) {
 	gmreal_t CurrentID = 0;
-	gmreal_t TotalCountOfAudioDevices = 0;
-
-	TotalCountOfAudioDevices = GM_GetDeviceCount();
-	if (TotalCountOfAudioDevices > 1) {
-		__debugbreak();
-	}
 
 	gmstring_t DeviceName = GM_GetDeviceName(0);
 	MessageBoxA(NULL, DeviceName, "Default device name", MB_ICONINFORMATION | MB_OK);
